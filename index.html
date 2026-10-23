@@ -67,4 +67,185 @@
 
   <!-- CSS 樣式設定 -->
   <style>
-    :root{--navy:#155c3c;--blue:#237a50;--gold:#a8db80;--bg:#f2f8f1;--ink:#234536}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}a{color:inherit}header{background:#f0f6f1;color:#174d2b;position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #155c3c22}.nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 20px}.brand{font-weight:900;font-size:19px;text-decoration:none;white-space:nowrap}.brand span{color:#207534}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;font-size:14px}nav a:hover{color:#329142}.hero{background:linear-gradient(180deg,#207534 0%,#329142 34%,#7dd16e 76%,#abf387 100%);color:white;text-align:center;padding:88px 20px 94px}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:3px}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.25;margin:18px 0}.hero p{font-size:18px;max-width:700px;margin:0 auto 30px;color:#ffffff}.btn{display:inline-block;border-radius:30px;padding:10px 24px;background:#fff;color:#176432;text-decoration:none;font-weight:800}.btn.secondary{background:transparent;border:1px solid #ffffffaa;color:white;background:#287d3a77;margin-left:8px}.wrap{max-width:1120px;margin:auto;padding:68px 20px}.heading{text-align:center;margin-bottom:34px}.heading h2{font-size:clamp(26px,4vw,36px);color:var(--navy);margin:0}.heading p{color:#627e6e;margin:8px 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.tile,.panel{background:white;border-radius:18px;padding:26px;box-shadow:0 7px
+    :root {
+      --navy: #155c3c;
+      --blue: #237a50;
+      --gold: #a8db80;
+      --bg: #f2f8f1;
+      --ink: #234536;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.8;
+    }
+    a { color: inherit; }
+    header {
+      background: #f0f6f1;
+      color: #174d2b;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 16px #155c3c22;
+    }
+    .nav {
+      max-width: 1120px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 13px 20px;
+    }
+    .brand {
+      font-weight: 900;
+      font-size: 19px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand span { color: #207534; }
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    nav a { text-decoration: none; font-size: 14px; }
+    nav a:hover { color: #329142; }
+    .hero {
+      background: linear-gradient(180deg, #207534 0%, #329142 34%, #7dd16e 76%, #abf387 100%);
+      color: white;
+      text-align: center;
+      padding: 88px 20px 94px;
+    }
+    .eyebrow {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.25;
+      margin: 18px 0;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #ffffff;
+    }
+    .btn {
+      display: inline-block;
+      border-radius: 30px;
+      padding: 10px 24px;
+      background: #fff;
+      color: #176432;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .btn.secondary {
+      background: #287d3a77;
+      border: 1px solid #ffffffaa;
+      color: white;
+      margin-left: 8px;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 68px 20px;
+    }
+    .heading {
+      text-align: center;
+      margin-bottom: 34px;
+    }
+    .heading h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      color: var(--navy);
+      margin: 0;
+    }
+    .heading p {
+      color: #627e6e;
+      margin: 8px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .tile, .panel {
+      background: white;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 7px 16px #155c3c11;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #627e6e;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <div class="nav">
+      <a href="#" class="brand">三峽天龍<span>補習班</span></a>
+      <nav>
+        <a href="#channels">升學管道</a>
+        <a href="#star">繁星推薦</a>
+        <a href="#apply">個人申請</a>
+        <a href="#contact">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 主視覺 Hero 區塊 -->
+  <section class="hero">
+    <div class="eyebrow">TAIPEI UNIVERSITY DISTRICT EDUCATION</div>
+    <h1>大學升學管道與繁星推薦指南</h1>
+    <p>三峽、北大特區高中生與家長專屬的升學導航，陪伴孩子從學測準備、校內排名到志願選填穩健前行。</p>
+    <div>
+      <a href="#channels" class="btn">了解升學管道</a>
+      <a href="#contact" class="btn secondary">預約升學諮詢</a>
+    </div>
+  </section>
+
+  <!-- 內容區塊 -->
+  <main class="wrap">
+    <div id="channels" class="heading">
+      <h2>多元升學管道解析</h2>
+      <p>掌握每一個入學管道的關鍵時程與選拔特質</p>
+    </div>
+
+    <div class="grid">
+      <div class="tile">
+        <h3>繁星推薦</h3>
+        <p>看重校內學業成績排名的第一階段入學機會，適合在校表現穩定的在地高中生。</p>
+      </div>
+      <div class="tile">
+        <h3>個人申請</h3>
+        <p>結合學測成績與學習歷程檔案，展現個人特質與學科潛能的重要管道。</p>
+      </div>
+      <div class="tile">
+        <h3>特殊選才</h3>
+        <p>尋找具備特殊才華、競賽表現或強烈學習熱忱的潛力人才，不看學測成績。</p>
+      </div>
+      <div class="tile">
+        <h3>分發入學</h3>
+        <p>透過分科測驗與採計組合，展現扎實學科實力進行大規模志願分發。</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <p>&copy; 2026 三峽天龍補習班・北大特區升學輔導團隊 All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
