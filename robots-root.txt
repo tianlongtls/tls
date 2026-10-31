@@ -1,0 +1,9 @@
+# 注意：這份 robots.txt 必須部署在網域根目錄：
+# https://tianlongtls.github.io/robots.txt
+# 放在 /tls/robots.txt 不會取代網域根目錄的 robots.txt。
+# 若根目錄已有 robots.txt，請將下列規則合併進去，不要覆蓋其他專案規則。
+
+User-agent: *
+Allow: /tls/
+
+Sitemap: https://tianlongtls.github.io/tls/sitemap.xml
