@@ -1,8 +1,4 @@
 User-agent: *
-Allow: /
-
-# Allow ChatGPT search discovery for public pages.
-User-agent: OAI-SearchBot
-Allow: /
+Allow: /tls/
 
 Sitemap: https://tianlongtls.github.io/tls/sitemap.xml
