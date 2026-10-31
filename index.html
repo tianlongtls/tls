@@ -8,8 +8,8 @@
   <title>三峽補習班｜大學升學管道、繁星推薦與學測輔導｜天龍教室</title>
 
   <!-- SEO 描述與在地關鍵字 -->
-  <meta name="description" content="三峽天龍補習班提供三峽、北大特區及新北市高中生與家長大學升學資訊，整理特殊選才、繁星推薦、個人申請、分發入學、學測準備與高中升學規劃，協助家庭了解入學制度、校系條件及準備方向。招生資格與時程請以當年度官方簡章為準。">
-  <meta name="keywords" content="三峽天龍補習班,三峽天龍教室,三峽補習班,北大特區補習班,三峽高中補習班,北大特區高中升學,三峽升學輔導,新北市升學輔導,大學升學管道,大學入學管道,高中升大學,高中升學規劃,繁星推薦,繁星推薦資格,繁星推薦校內排名,大學個人申請,特殊選才,分發入學,考試分發,學測準備,分科測驗,學習歷程檔案,大學科系選擇,大學落點分析,高中生升學諮詢,家長升學資訊,三峽高中生,北大特區家長">
+  <meta name="description" content="三峽天龍教室提供國中補習、七八九年級課程、國中升高中銜接、高中課業輔導及高中升大學升學規劃。以六年一貫學習陪伴為核心，從國中基礎、會考準備到高中學測、繁星推薦、個人申請與分科測驗，協助三峽、北大特區學生建立讀書方法與升學方向。招生資格與時程請以當年度官方簡章為準。">
+  <meta name="keywords" content="天龍補習班,三峽天龍教室,天龍國中部,三峽國中補習班,北大特區國中補習,七年級補習,八年級補習,九年級會考衝刺,國中升高中,國中高中銜接,六年一貫,六年一貫升學規劃,國中小班教學,國中個別指導,高中補習班,三峽高中補習,高中升大學,高中升學規劃,學測準備,繁星推薦,大學個人申請,特殊選才,分科測驗,學習歷程檔案,大學升學輔導,三峽升學輔導,北大特區升學輔導,新北市升學輔導,會考準備,國文,英文,數學,理化,社會">
 
   <!-- 允許爬蟲索引與規範網址 -->
   <meta name="robots" content="index, follow">
@@ -323,7 +323,84 @@
       .btn.secondary { margin: 12px 0 0; }
       .steps { grid-template-columns: 1fr; }
     }
+
+    /* 國中部 × 高中部：六年一貫學習專區 */
+    .six-year-section { background: linear-gradient(180deg,#f4faf3,#ffffff); }
+    .six-year-intro { max-width: 850px; margin: 0 auto 28px; text-align: center; }
+    .six-year-intro strong { color: var(--navy); }
+    .six-year-banner {
+      background: linear-gradient(120deg,#155c3c,#398a55);
+      color: #fff; border-radius: 22px; padding: 34px;
+      box-shadow: 0 10px 30px #155c3c20; margin: 26px 0;
+    }
+    .six-year-banner h3 { margin: 0 0 10px; font-size: clamp(23px,3vw,32px); }
+    .six-year-banner p { margin: 0; color: #eff9ef; }
+    .six-year-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0; }
+    .six-year-card {
+      background:#fff; border:1px solid #dceade; border-radius:18px;
+      padding:24px; box-shadow:0 7px 24px #155c3c10;
+    }
+    .six-year-card .stage { color:#477b2c; font-size:13px; font-weight:900; letter-spacing:1px; }
+    .six-year-card h3 { color:var(--navy); margin:8px 0; font-size:21px; }
+    .six-year-card p { margin:0; font-size:15px; }
+    .six-year-card ul { padding-left:20px; margin:12px 0 0; font-size:14px; }
+    .six-year-timeline { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; margin:24px 0 30px; }
+    .six-year-timeline div {
+      text-align:center; background:#fff; border-radius:13px; padding:15px 8px;
+      border-bottom:4px solid var(--gold); box-shadow:0 4px 16px #155c3c0d;
+    }
+    .six-year-timeline b { display:block; color:var(--navy); font-size:19px; }
+    .six-year-timeline span { display:block; font-size:13px; color:#587363; }
+    .commitment-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .commitment {
+      background:#fff; border-radius:14px; padding:18px; border:1px solid #e0ebdf;
+    }
+    .commitment b { color:var(--blue); display:block; margin-bottom:5px; }
+    .brochure-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
+    .brochure-gallery figure { margin:0; background:#fff; padding:10px; border-radius:14px; box-shadow:0 6px 20px #155c3c12; }
+    .brochure-gallery img { width:100%; height:260px; object-fit:contain; background:#f7f5ef; border-radius:8px; }
+    .brochure-gallery figcaption { font-size:13px; color:#557263; padding:8px 3px 2px; text-align:center; }
+    .six-year-section .note { text-align:center; }
+    @media(max-width:850px) {
+      .six-year-grid,.commitment-grid,.brochure-gallery { grid-template-columns:repeat(2,1fr); }
+      .six-year-timeline { grid-template-columns:repeat(3,1fr); }
+    }
+    @media(max-width:550px) {
+      .six-year-grid,.commitment-grid,.brochure-gallery { grid-template-columns:1fr; }
+      .six-year-timeline { grid-template-columns:repeat(2,1fr); }
+      .six-year-banner { padding:24px; }
+      .brochure-gallery img { height:auto; max-height:420px; }
+    }
+
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": "https://tianlongtls.github.io/tls/#six-year-learning",
+    "name": "三峽天龍教室｜國中部與高中部六年一貫學習規劃",
+    "url": "https://tianlongtls.github.io/tls/#six-year",
+    "description": "提供國中七至九年級學習規劃、國中升高中銜接、高中課業輔導及高中升大學升學規劃，重視基礎建立、個別指導、會考準備、學測與大學多元入學資訊。",
+    "inLanguage": "zh-Hant",
+    "areaServed": [
+      {"@type": "City", "name": "新北市三峽區"},
+      {"@type": "Place", "name": "北大特區"}
+    ],
+    "knowsAbout": [
+      "國中補習",
+      "國中升高中",
+      "高中升大學",
+      "六年一貫學習規劃",
+      "國中教育會考",
+      "學測準備",
+      "繁星推薦",
+      "大學個人申請",
+      "分科測驗"
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -332,6 +409,7 @@
     <div class="nav">
       <a class="brand" href="https://tls-sanxia.github.io/tls.sanxia/">🎓 <span>三峽天龍教室</span>｜升學指南</a>
       <nav>
+        <a href="#six-year">六年一貫</a>
         <a href="#routes">四大管道</a>
         <a href="#star-story">學長姐見證</a>
         <a href="#compare">制度比較</a>
@@ -352,6 +430,161 @@
   </section>
 
   <main>
+
+    <!-- 天龍國中部 × 高中部：六年一貫學習與升學規劃 -->
+    <section class="wrap section six-year-section" id="six-year">
+      <div class="heading">
+        <h2>天龍國中部 × 高中部｜六年一貫的堅持</h2>
+        <p>從國中生升高中，到高中生升大學，陪孩子走好每一個學習階段</p>
+      </div>
+
+      <div class="six-year-intro">
+        <p><strong>升學不是只準備一次考試，而是六年持續累積的過程。</strong>
+        天龍以國中三年與高中三年的學習銜接為方向，重視基礎建立、讀書方法、學習追蹤與升學規劃。
+        讓學生在不同階段都有清楚的目標，也讓家長能掌握孩子的學習進度。</p>
+      </div>
+
+      <div class="six-year-banner">
+        <h3>🎓 六年一貫，不只陪孩子考上下一所學校</h3>
+        <p>從七年級建立學習習慣，經過八年級能力提升、九年級會考準備，
+        再銜接高中課程、校內段考與大學升學管道；以階段性目標與持續陪伴，
+        協助孩子逐步累積面對升學挑戰的實力。</p>
+      </div>
+
+      <div class="six-year-grid">
+        <article class="six-year-card">
+          <span class="stage">JUNIOR HIGH｜國中部</span>
+          <h3>📘 七年級｜基礎與習慣養成</h3>
+          <p>協助學生適應國中學習節奏，建立各科觀念與穩定的讀書方法。</p>
+          <ul>
+            <li>培養今日事今日畢的習慣</li>
+            <li>掌握國文、英文、數學等學科基礎</li>
+            <li>透過課後檢核了解學習狀況</li>
+          </ul>
+        </article>
+        <article class="six-year-card">
+          <span class="stage">JUNIOR HIGH｜國中部</span>
+          <h3>📗 八年級｜學科提升與追分</h3>
+          <p>持續強化解題技巧，補足學習落差，培養獨立思考與應用能力。</p>
+          <ul>
+            <li>重點觀念整理與題型練習</li>
+            <li>依學習狀況安排個別加強</li>
+            <li>段考前複習與弱科補強</li>
+          </ul>
+        </article>
+        <article class="six-year-card">
+          <span class="stage">JUNIOR HIGH｜國中部</span>
+          <h3>🏆 九年級｜國中會考實力強化</h3>
+          <p>依學生程度安排主科加強與弱科補強，逐步熟悉會考題型與作答節奏。</p>
+          <ul>
+            <li>會考範圍複習與重點統整</li>
+            <li>模擬練習、錯題訂正與檢核</li>
+            <li>升高中志願與學習方向討論</li>
+          </ul>
+        </article>
+        <article class="six-year-card">
+          <span class="stage">HIGH SCHOOL｜高中部</span>
+          <h3>📙 高一｜高中課程銜接</h3>
+          <p>從國中學習方式轉換到高中課程，建立自主學習與校內成績管理能力。</p>
+          <ul>
+            <li>高中各科觀念與學習方法</li>
+            <li>段考準備及讀書計畫</li>
+            <li>認識學群與探索興趣方向</li>
+          </ul>
+        </article>
+        <article class="six-year-card">
+          <span class="stage">HIGH SCHOOL｜高中部</span>
+          <h3>📕 高二｜學習深化與方向探索</h3>
+          <p>持續累積學科實力，逐步認識大學校系與不同升學管道。</p>
+          <ul>
+            <li>學科弱點分析與進度調整</li>
+            <li>了解學習歷程與校系需求</li>
+            <li>初步規劃學測及升學方向</li>
+          </ul>
+        </article>
+        <article class="six-year-card">
+          <span class="stage">HIGH SCHOOL｜高中部</span>
+          <h3>🎯 高三｜學測與大學升學衝刺</h3>
+          <p>依個人目標與校系條件，規劃學測、繁星、個人申請及分科測驗準備。</p>
+          <ul>
+            <li>學測總複習與考試策略</li>
+            <li>繁星推薦、個人申請資訊整理</li>
+            <li>分科測驗與志願選填方向</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="heading" style="margin-top:42px;">
+        <h2>六年學習路徑｜國中升高中 × 高中升大學</h2>
+        <p>每一年都有不同任務，讓學習進度與升學目標逐步銜接</p>
+      </div>
+      <div class="six-year-timeline" aria-label="六年一貫學習階段">
+        <div><b>七年級</b><span>基礎建立</span></div>
+        <div><b>八年級</b><span>能力提升</span></div>
+        <div><b>九年級</b><span>會考準備</span></div>
+        <div><b>高一</b><span>高中銜接</span></div>
+        <div><b>高二</b><span>學科深化</span></div>
+        <div><b>高三</b><span>大學升學</span></div>
+      </div>
+
+      <div class="heading" style="margin-top:42px;">
+        <h2>天龍的堅持｜讓學習有人陪、進度有人看</h2>
+        <p>以學生學習需求為核心，建立穩定且有系統的學習支持</p>
+      </div>
+      <div class="commitment-grid">
+        <div class="commitment"><b>① 堅持小班教學</b>掌握學生課堂參與與學習狀況，讓問題有機會被看見。</div>
+        <div class="commitment"><b>② 堅持嚴格管理</b>依班級管理流程掌握到班情形，並讓家長了解孩子學習動態。</div>
+        <div class="commitment"><b>③ 堅持優質師資</b>由教師帶領觀念理解、題型練習與課業問題釐清。</div>
+        <div class="commitment"><b>④ 堅持專業行政</b>提供課程與升學資訊整理，協助家長掌握重要學習階段。</div>
+        <div class="commitment"><b>⑤ 堅持健全輔導</b>依學生需求安排課後輔導、個別加強與學習檢核。</div>
+        <div class="commitment"><b>⑥ 堅持舒適環境</b>重視教室環境與學習秩序，營造安心專注的學習空間。</div>
+      </div>
+
+      <div class="tip">
+        <strong>天龍個別指導強化班：</strong>
+        入班前可先了解學生程度與學習需求，再討論適合的課程安排；
+        透過專屬課程、教師指導、個別練習、實戰演練與錯題檢討，逐步建立主動學習能力。
+      </div>
+
+      <div class="heading" style="margin-top:42px;">
+        <h2>從招生簡章看見天龍的學習規劃</h2>
+        <p>國中各年級課程規劃、課後輔導與高中升學學習環境</p>
+      </div>
+      <div class="brochure-gallery">
+        <figure>
+          <img src="assets/tianlong-brochure-01.jpg" alt="天龍教室讀書方法、六大堅持、特色與課後輔導介紹">
+          <figcaption>教學理念、學習管理與課後輔導</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tianlong-brochure-02.jpg" alt="天龍國中學習規劃，包含七年級、八年級、九年級學習階段">
+          <figcaption>國中三年階段式學習規劃</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tianlong-brochure-03.jpg" alt="天龍七年級領袖培訓班寒暑期與開學後課表">
+          <figcaption>七年級領袖培訓班課程規劃</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tianlong-brochure-04.jpg" alt="天龍八年級免試追分班寒暑期與開學後課表">
+          <figcaption>八年級免試追分班課程規劃</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tianlong-brochure-05.jpg" alt="天龍教育理念與學習環境介紹">
+          <figcaption>教育理念與學習環境</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tianlong-brochure-06.jpg" alt="天龍九年級會考必勝班課程規劃">
+          <figcaption>九年級會考必勝班課程規劃</figcaption>
+        </figure>
+      </div>
+
+      <div class="cta" style="border-radius:20px; margin-top:36px;">
+        <h2>從國中到高中，讓升學每一步都有方向</h2>
+        <p>歡迎家長預約天龍教室課程諮詢，了解孩子目前程度與適合的學習安排。</p>
+        <a class="btn" href="tel:0226722088">☎ 預約課程諮詢｜02-2672-2088</a>
+      </div>
+      <p class="note">課程內容、班級安排與招生資訊依各校區當年度公告為準；六年一貫為學習陪伴與升學規劃理念，非保證錄取或保證成績。</p>
+    </section>
+
     <!-- 四大管道導覽 -->
     <section class="wrap" id="routes">
       <div class="heading">
